@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: antiquewhite;
+            align-items: center;
+            font-family: monospace;
+            margin: 100px;
+            font-size: 18px;
+            padding: 15px 0 15px 5px;
+        }
+
+        form {
+            display: inline;
+        }
+
+        .content {
+            margin: auto;
+            max-width: 375px;
+            border-radius: 18px;
+        }
+
+        input {
+            border: none;
+        }
+
+        .submit {
+            background-color: blueviolet;
+            text-align: center;
+            padding: 5px;
+            margin-top: 10px;
+            
+        }
+
+        p {
+            padding-top: 5px;
+        }
+
+        fieldset {
+            padding: 20px;
+            background-color: aquamarine;
+            box-shadow: 2px;
+            border: none;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <fieldset>
+        <form method="POST" action="login.php">
+            <Label for="Username">
+                <p>Username: </p>
+                <input type="text" id="Username" name="Username"/>
+            </Label>
+            <br/>
+            <label for="Password">
+                <p>Password: </p>
+                <input type="text" id="Password" name="Password"/>
+                <br/>
+                <input class="submit" type="submit" value="Submit"/>
+            </label>
+        </form>
+        <form method="GET" action="calculate.php">
+            <label for="Seconds">
+                <p> Number of seconds </p>
+                <input type="text" id="seconds" name="Seconds"/>
+                <br/>
+                <input class="submit" type="submit" value="submit"/>
+            </label>
+    
+        </form>
+        </fieldset>
+    </div>
+</body>
+</html>
