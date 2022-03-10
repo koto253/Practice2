@@ -60,25 +60,27 @@
 
     <div class="content">
         <fieldset>
+        <h1>login</h1> 
         <form method="POST" action="login.php">
             <Label for="Username">
                 <p>Username: </p>
-                <input type="text" id="Username" name="Username"/>
+                <input type="text" id="Username" name="Username" placeholder="Username"/>
             </Label>
             <br/>
             <label for="Password">
                 <p>Password: </p>
-                <input type="text" id="Password" name="Password"/>
+                <input type="text" id="Password" name="Password" placeholder="Password"/>
                 <br/>
                 <input class="submit" type="submit" value="Submit"/>
             </label>
         </form>
+        <h1>Calculation</h1>
         <form method="GET" action="calculate.php">
             <label for="Seconds">
-                <p> Number of seconds </p>
-                <input type="text" id="seconds" name="Seconds"/>
+                <p> Movie Duration </p>
+                <input type="text" id="seconds" name="Seconds" placeholder="In seconds"/>
                 <br/>
-                <input class="submit" type="submit" value="submit"/>
+                <input class="submit" type="submit" value="calculate/>
             </label>
     
         </form>
