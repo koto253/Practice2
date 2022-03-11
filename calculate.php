@@ -4,13 +4,17 @@
     Afifa Tasnova
     Ismael Bah
 */
-
+// Retrieve form $_GET autoglobal array
 $secs = $_GET["Seconds"];
-$hour = $secs / 3600;
-$hours = round($secs / 3600);
-$min = ($hour * 60 % 60);
-$remainSec = ($secs % 60);
+
+// calculate the amount of hour and second
+$hour = floor($secs / 3600);
+$remainSec = $secs % 3600;
+$min = floor($remainSec / 60);
+$second = $remainSec % 60;
+
+
 
 echo "<p>
-$hours hour, $min min and $remainSec seconds
+$hour hour, $min min and $second seconds
 </p>";
